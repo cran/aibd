@@ -61,10 +61,6 @@ e <- rnorm(nrow(Z)*ncol(A),0,sd=sigx)
 X <- Z \%*\% A + e
 logLikelihoodLGLFM(Z, X, sdX=sigx, sdA=siga)
 logPosteriorLGLFM(Z, ibp(1,nItems), X, sdX=sigx, sdA=siga)
-
-\dontshow{
-rscala::scalaDisconnect(aibd:::s)
-}
 }
 
 }

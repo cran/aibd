@@ -41,11 +41,6 @@ d2 <- aibd(1, seq_along(states), 1.0, dist)
 
 samples_ibp <- sampleFeatureAllocation(10, d1, parallel=FALSE)
 samples_aibd <- sampleFeatureAllocation(15, d2, parallel=FALSE)
-
-
-\dontshow{
-rscala::scalaDisconnect(aibd:::s)
-}
 }
 
 }

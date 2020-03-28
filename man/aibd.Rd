@@ -42,15 +42,9 @@ This function specifies an Attraction Indian Buffet Distribution (AIBD), which i
 distribution over feature allocations.
 }
 \examples{
-\donttest{ # Regardless of size, the initial warmup can exceed CRAN's 5 seconds threshold
 states <- c("California","Wisconsin","Nebraska","New York")
 data <- USArrests[states,]
 dist <- dist(scale(data))
 aibd(1, seq_along(states), 1.0, dist)
-
-\dontshow{
-rscala::scalaDisconnect(aibd:::s)
-}
-}
 
 }

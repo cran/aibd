@@ -136,10 +136,6 @@ A <- matrix(rnorm(ncol(Z)*dimA,sd=siga),nrow=ncol(Z),ncol=dimA)
 e <- rnorm(nrow(Z)*ncol(A),0,sd=sigx)
 X <- Z \%*\% A + e
 samples <- samplePosteriorLGLFM(Z, dist, X, sdX=sigx, sdA=siga, nSamples=1000, thin=1)
-
-\dontshow{
-rscala::scalaDisconnect(aibd:::s)
-}
 }
 
 }

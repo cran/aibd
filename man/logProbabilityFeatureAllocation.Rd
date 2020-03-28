@@ -39,10 +39,6 @@ Z1 <- matrix(c(1,1,0,1), nrow=4)
 
 logProbabilityFeatureAllocation(Z1, d1)
 logProbabilityFeatureAllocation(Z1, d2)
-
-\dontshow{
-rscala::scalaDisconnect(aibd:::s)
-}
 }
 
 }

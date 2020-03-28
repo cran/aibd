@@ -19,13 +19,7 @@ This function specifies an Indian Buffet Process (IBP), which is a
 distribution over feature allocations.
 }
 \examples{
-\donttest{ # Regardless of size, the initial warmup can exceed CRAN's 5 seconds threshold
 ibp(1,5)
 ibp(1,c("CA","WI","NE","NY","UT"))
-
-\dontshow{
-rscala::scalaDisconnect(aibd:::s)
-}
-}
 
 }
